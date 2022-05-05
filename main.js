@@ -3,6 +3,8 @@ let h = 0;
 let m = 0;
 let s = 0;
 let ms = 0;
+let NowTime = 0;
+let CountTime = 0;
 
 // setintarbal,clearintarbal用
 let timelog = 0;
@@ -12,8 +14,8 @@ let startbutton = document.getElementById('start');
 let stopbutton  = document.getElementById('stop');
 let resetbutton = document.getElementById('reset');
 
+
 function StartTimer(){
-  console.log("start");
   timelog = setInterval(CountTime,100);
   
   startbutton.disabled = true;
